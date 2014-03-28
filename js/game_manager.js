@@ -46,8 +46,8 @@ GameManager.prototype.setup = function () {
     this.score       = previousState.score;
     this.over        = previousState.over;
     this.won         = previousState.won;
-    this.seenNumbers = previousState.seenNumbers;
-    this.nextFinishableNumber = previousState.nextFinishableNumber;
+    this.seenNumbers = previousState.seenNumbers || {};
+    this.nextFinishableNumber = previousState.nextFinishableNumber || 2;
     this.keepPlaying = previousState.keepPlaying;
   } else {
     this.grid        = new Grid(this.size);

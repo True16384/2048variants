@@ -53,9 +53,10 @@ html, body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   margin: 0;
+  margin-top: 8px;
   display: block;
   float: left; }
 
